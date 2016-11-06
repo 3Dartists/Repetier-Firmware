@@ -1130,17 +1130,17 @@ AD15 CH15
 #define MOTOR_FAULT_PIGGY_PIN  7
 
 // Note that on the Due pin A0 on the board is channel 2 on the ARM chip
-#define HEATER_0_PIN     69
-#define TEMP_0_PIN        6
-#define HEATER_1_PIN     42
-#define TEMP_1_PIN        5
+#define HEATER_0_PIN        69
+#define TEMP_0_PIN           6
+#define HEATER_1_PIN        42
+#define TEMP_1_PIN           5
 
-#define HEATER_2_PIN      8
-#define TEMP_2_PIN        4
-#define HEATER_3_PIN      9
-#define TEMP_3_PIN        3
-#define HEATER_4_PIN     97
-#define TEMP_4_PIN        2
+#define HEATER_2_PIN         8
+#define TEMP_2_PIN           4
+#define HEATER_3_PIN         9
+#define TEMP_3_PIN           3
+#define HEATER_4_PIN        97
+#define TEMP_4_PIN           2
 
 #define ORIG_E0_STEP_PIN    63
 #define ORIG_E0_DIR_PIN     64
@@ -1164,13 +1164,13 @@ AD15 CH15
 #define ORIG_E3_ENABLE_PIN  30
 #define E3_MS_PIN           -1
 
-#define SDSUPPORT         true
-#define SDPOWER 	        -1
-#define SDSS		        77
+#define SDSUPPORT           true
+#define SDPOWER 	          -1
+#define SDSS		          77
 #define ORIG_SDCARDDETECT   87
 #define SDCARDDETECTINVERTED 0
 
-#define LED_PIN 	        -1
+#define LED_PIN 	          -1
 #define ORIG_FAN_PIN 	    92
 #define ORIG_FAN2_PIN       31
 
@@ -1186,9 +1186,9 @@ AD15 CH15
 #define E3_PINS ORIG_E3_STEP_PIN,ORIG_E3_DIR_PIN,ORIG_E3_ENABLE_PIN,
 
 //** DAC for onboard motor vfref current
-#define DAC0_SYNC   27
+#define DAC0_SYNC       27
 //** DAC for piggy module motor vfref current
-#define DAC1_SYNC    6
+#define DAC1_SYNC        6
 
 //** Onboard addictional memory
 // 64K EEPROM
@@ -1202,7 +1202,7 @@ AD15 CH15
 // EXP Use internal USART-3
 #define ESP_WIFI_MODULE_COM 3
 #define ESP_WIFI_MODULE_RESET_PIN 43
-#define PIGGY_GPIO_PIN     11
+#define PIGGY_GPIO_PIN  11
 
 #define FTDI_COM_RESET_PIN 32
 
@@ -1218,15 +1218,15 @@ AD15 CH15
 /** Expansion#1 port J14  3V3/5V voltage level firmware selectable**/
 #define EXP1_OUT_ENABLE_PIN 49
 #define EXP1_VOLTAGE_SELECT  5
-#define EXP1_J14_4        48
-#define EXP1_J14_6        47
-#define EXP1_J14_8        46
+#define EXP1_J14_4          48
+#define EXP1_J14_6          47
+#define EXP1_J14_8          46
 // USART-0 RX
-#define EXP1_J14_5        19
+#define EXP1_J14_5          19
 // USART-0 TX
-#define EXP1_J14_3        18
-#define EXP1_J14_9       104
-#define EXP1_J14_10      105
+#define EXP1_J14_3          18
+#define EXP1_J14_9         104
+#define EXP1_J14_10        105
 
 //** Expansion#2 port J5
 // USART-1 RX
