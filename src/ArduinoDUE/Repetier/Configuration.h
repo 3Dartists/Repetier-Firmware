@@ -64,7 +64,8 @@ To override EEPROM settings with config settings, set EEPROM_MODE 0
 // STACKER 3D Superboard        = 412
 // Alligator Board rev1         = 500
 // Alligator Board rev2         = 501
-#define MOTHERBOARD 402
+// Alligator Board rev3         = 502
+#define MOTHERBOARD 502
 
 #include "pins.h"
 
@@ -905,7 +906,7 @@ on this endstop.
 // ##########################################################################################
 
 // Microstep setting (Only functional when stepper driver microstep pins are connected to MCU. Currently only works for RAMBO boards
-#define MICROSTEP_MODES {8,8,8,8,8} // [1,2,4,8,16]
+#define MICROSTEP_MODES {32,32,32,16,8} // [1,2,4,8,16]
 
 // Motor Current setting (Only functional when motor driver current ref pins are connected to a digital trimpot on supported boards)
 #if MOTHERBOARD==301
@@ -914,7 +915,7 @@ on this endstop.
 #elif MOTHERBOARD==12
 //#define MOTOR_CURRENT {35713,35713,35713,35713,35713} // Values 0-65535 (3D Master 35713 = ~1A)
 #define MOTOR_CURRENT_PERCENT {55,55,55,55,55}
-#elif (MOTHERBOARD==500) || (MOTHERBOARD==501) // Alligator boards
+#elif (MOTHERBOARD==500) || (MOTHERBOARD==501) || (MOTHERBOARD==502) // Alligator boards
 //#define MOTOR_CURRENT {130,130,130,110,110,110,110} // expired method
 #define MOTOR_CURRENT_PERCENT {51,51,51,44,44,44,44}
 #endif
@@ -1638,7 +1639,7 @@ The following settings override uiconfig.h!
 24 or CONTROLLER_ZONESTAR = Zonestar P802M with LCD 20x4 and 5 ADC button keypad
 405 or CONTROLLER_FELIX_DUE Felix LCD für due based board
 */
-#define FEATURE_CONTROLLER CONTROLLER_RADDS
+#define FEATURE_CONTROLLER NO_CONTROLLER
 
 /* You can have one keypad connected via single analog pin as seen on
  some printers with Melzi V2.0 board, 20x4 LCD and 5 buttons keypad. This must be
